@@ -1,9 +1,16 @@
 import React, { useState } from "react";
+import getImages from '../requests/getImages';
 
 import "../styles/Search.css";
 
+
 const Search = () => {
   const [searchValue, setSearchValue] = useState("");
+
+  const handleSummit = (event) => {
+    event.preventDefault()
+    getImages(searchValue)
+  };
 
   return (
     <div className="search">
@@ -12,7 +19,7 @@ const Search = () => {
         src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
         alt="nasalogo"
       />
-      <form className="search-form">
+      <form className="search-form" onSubmit={handleSummit}>
         <input
           className="input-field"
           type="text"

@@ -4,6 +4,12 @@
   align-content: center;
   justify-content: center;
 }
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
 .nasa-logo {
   align-self: center;
   height: 100px;
@@ -21,6 +27,7 @@
 input[type="text"]::placeholder {  
   text-align: center;
   font-family: monospace;
+  font-size: medium;
 }
 .search-button {
   border-radius: 10px;
@@ -28,5 +35,5 @@ input[type="text"]::placeholder {
   height: 34px;
   width: 5%;
   padding: 5px;
-  font-size: 15px;
+  font-size: 14px;
 }
