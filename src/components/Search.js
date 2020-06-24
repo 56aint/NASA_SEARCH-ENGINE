@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 import '../styles/Search.css';
 
-const Search = (props) => {
+const Search = () => {
   return (
-    <div className="Search">
+    <div className="search-form">
 
-      <img className="nasa-logo" src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg" alt="nasa logo" height="62" width=""/>
-      <input className="input-field" type="text" ></input>
+      <img className="nasa-logo" src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg" alt="nasalogo"/>
+      <input className="input-field" type="text" placeholder="type image name" ></input>
 
     </div>
   )
