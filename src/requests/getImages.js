@@ -5,9 +5,9 @@ const getImages = (query) => {
     return Promise.resolve([]);
   } else {
     return axios
-      .get(`https://images-api.nasa.gov/search?q=moon`)
+      .get(`https://images-api.nasa.gov/search?q=${query}`)
       .then((response) => {
-        console.log(response);
+        console.log(response.data.collection.items);
       })
       .catch((err) => {
         console.log(err);

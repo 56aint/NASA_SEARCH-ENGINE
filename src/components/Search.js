@@ -13,7 +13,7 @@ const Search = () => {
   };
 
   return (
-    <div className="search">
+    <div className="Search">
       <img
         className="nasa-logo"
         src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
@@ -27,7 +27,7 @@ const Search = () => {
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
         ></input>
-        <button className="search-button" type="submit">Go!</button>
+        <button className="search-button">Go!</button>
       </form>
     </div>
   );

@@ -6,7 +6,7 @@ exports[`App renders correctly 1`] = `
     class="App"
   >
     <div
-      class="search"
+      class="Search"
     >
       <img
         alt="nasalogo"
@@ -24,7 +24,6 @@ exports[`App renders correctly 1`] = `
         />
         <button
           class="search-button"
-          type="submit"
         >
           Go!
         </button>
