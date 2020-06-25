@@ -6,7 +6,7 @@ import '../styles/App.css';
 
 const App = () => {
   const [searchResults, setSearchResults] = useState([])
-  console.log(searchResults)
+  // console.log(searchResults)
 
 
   return (
