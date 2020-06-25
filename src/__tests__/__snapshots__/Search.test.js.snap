@@ -5,11 +5,6 @@ exports[`App renders correctly 1`] = `
   <div
     class="Search"
   >
-    <img
-      alt="nasalogo"
-      class="nasa-logo"
-      src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
-    />
     <form
       class="search-form"
     >

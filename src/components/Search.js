@@ -1,24 +1,20 @@
 import React, { useState } from "react";
 import getImages from '../requests/getImages';
+//import { setSearchResults } from './App'
 
 import "../styles/Search.css";
 
 
-const Search = () => {
+const Search = ({setSearchResults}) => {
   const [searchValue, setSearchValue] = useState("");
 
   const handleSummit = (event) => {
     event.preventDefault()
-    getImages(searchValue)
+    setSearchResults(getImages(searchValue));
   };
 
   return (
     <div className="Search">
-      <img
-        className="nasa-logo"
-        src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
-        alt="nasalogo"
-      />
       <form className="search-form" onSubmit={handleSummit}>
         <input
           className="input-field"
