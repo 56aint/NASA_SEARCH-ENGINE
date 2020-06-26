@@ -9,7 +9,7 @@ const SearchResults = ({ results }) => {
     return (
       <div className="SearchResults">
         {results.map((image) => (
-          <img className="card-image" src={image} alt="spaceImage" />
+          <img className="card-image" src={image} key={image} alt="spaceImage" />
         ))}
       </div>
     );
@@ -17,7 +17,8 @@ const SearchResults = ({ results }) => {
   
 };
 SearchResults.propTypes = {
-  image: PropTypes.object
+  image: PropTypes.object,
+  results: PropTypes.array,
 }
 
 export default SearchResults;
