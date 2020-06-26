@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import Search from './Search'
-import SearchResults from './SearchResults'
+import React, { useState } from "react";
+import Search from "./Search";
+import SearchResults from "./SearchResults";
 
-import '../styles/App.css';
+import "../styles/App.css";
 
 const App = () => {
-  const [searchResults, setSearchResults] = useState([])
-  // console.log(searchResults)
-
+  const [searchResults, setSearchResults] = useState([]);
+  //searchResults.map((e) => console.log(e));
 
   return (
     <div className="App">
@@ -17,9 +16,12 @@ const App = () => {
         alt="nasalogo"
       />
       <Search setSearchResults={setSearchResults} />
-      <SearchResults />
+
+      {searchResults && searchResults.length > 0 && (
+        <SearchResults results={searchResults} />
+      )}
     </div>
   );
-}
+};
 
 export default App;
