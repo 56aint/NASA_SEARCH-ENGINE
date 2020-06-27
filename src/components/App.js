@@ -16,9 +16,9 @@ const App = () => {
       />
       <Search setSearchResults={setSearchResults} />
 
-      {searchResults && searchResults.length > 0 && ( searchResults.map((image) => 
-        <SearchResults results={searchResults} />
-      ))}
+      {searchResults &&
+        searchResults.length > 0 &&
+        searchResults.map((image) => <SearchResults results={searchResults} />)}
     </div>
   );
 };

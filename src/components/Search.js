@@ -7,7 +7,7 @@ const Search = ({ setSearchResults }) => {
   const [searchValue, setSearchValue] = useState("");
   const [load, setLoad] = useState(false);
 
-  const handleSummit = async (event) => {
+  const handleSubmit = async (event) => {
     setLoad(true);
     event.preventDefault();
     setSearchResults(await getImages(searchValue));
@@ -24,7 +24,7 @@ const Search = ({ setSearchResults }) => {
           </div>
         </div>
       )}
-      <form className="search-form" onSubmit={handleSummit}>
+      <form className="search-form" onSubmit={handleSubmit}>
         <input
           className="input-field"
           type="text"
@@ -34,11 +34,8 @@ const Search = ({ setSearchResults }) => {
         ></input>
         <button className="search-button">Go!</button>
       </form>
-
     </div>
-    );
-
-
+  );
 };
 
 Search.propTypes = {
