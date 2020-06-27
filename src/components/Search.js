@@ -14,29 +14,29 @@ const Search = ({ setSearchResults }) => {
     setLoad(false);
   };
 
-  if (load) {
-    return (
-      <div className="loading">
-        <div className="spinner1" />
-        <div className="spinner2" />
-      </div>
+  return (
+    <div className="Search">
+      {load && (
+        <div className="Search">
+          <div className="loading">
+            <div className="spinner1" />
+            <div className="spinner2" />
+          </div>
+        </div>
+      )}
+      <form className="search-form" onSubmit={handleSummit}>
+        <input
+          className="input-field"
+          type="text"
+          placeholder="type image name"
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+        ></input>
+        <button className="search-button">Go!</button>
+      </form>
+
+    </div>
     );
-  } else {
-    return (
-      <div className="Search">
-        <form className="search-form" onSubmit={handleSummit}>
-          <input
-            className="input-field"
-            type="text"
-            placeholder="type image name"
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
-          ></input>
-          <button className="search-button">Go!</button>
-        </form>
-      </div>
-    );
-  }
 
 
 };
