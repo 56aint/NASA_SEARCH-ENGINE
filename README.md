@@ -4,6 +4,9 @@ React TECH-TEST
 ## SCREENSHOTS
 Find below the app's mobile and desktop views
 
+![](https://github.com/56aint/NASA_SEARCH-ENGINE/blob/dev/screenshots/mobile-view.png)
+![](https://github.com/56aint/NASA_SEARCH-ENGINE/blob/dev/screenshots/desktop-view.png)
+
 ## DESCRIPTION
 This project is a React web application which allows users to search and retrieve space/universe related images from NASA API.
 ## *Libraries and Packages
