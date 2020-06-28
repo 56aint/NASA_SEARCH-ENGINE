@@ -18,7 +18,7 @@ const App = () => {
 
       {searchResults &&
         searchResults.length > 0 &&
-        searchResults.map((image) => <SearchResults results={searchResults} />)}
+        searchResults.map((image, index) => <SearchResults results={image} key={index}/>)}
     </div>
   );
 };
