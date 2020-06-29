@@ -4,8 +4,8 @@ import "../styles/SearchResults.css";
 
 const SearchResults = ({ results }) => {
   return (
-    <div className="SearchResults">
-        <img className="card-image" src={results} alt="spaceImage" />
+    <div className="SearchResults" data-testid="SearchResults">
+        <img className="card-image" data-testid="card-image" src={results} alt="spaceImage" />
     </div>
   );
 }
