@@ -22,7 +22,7 @@ This project is a React web application which allows users to search and retriev
 cd your-project-folder-name and run;
 npm install: in the project directory
 
-*npm start: also in the project directory, for development mode & open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*npm start: also in the project directory, for development mode & open (http://localhost:3000) to view it in the browser.
 ```
 
 I am hoping to go back on this project in the nearest future to improve the testing, the styling (especially to make it more responsive for different mobile devices).
