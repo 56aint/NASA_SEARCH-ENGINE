@@ -104,3 +104,13 @@ input[type="text"]::placeholder {
     -webkit-transform: scale(1);
   }
 }
+@media(max-width:600px){
+.search-button {
+  width: 10%;
+}
+.input-field {
+  width: 120px;
+  border-radius: 10px;
+}
+
+}
